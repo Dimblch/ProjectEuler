@@ -10,13 +10,12 @@
 
     By considering the terms in the Fibonacci sequence whose values do not exceed four million,
     find the sum of the even-valued terms.
-
 """
 
 fi_a = 1
 fi_b = 2
 fi_z = 3
-sum = 2     # Поскольку ниже проверяем элементы начиная с третьего, в сумму сразу записываем первое четное число
+sum = 2  # Поскольку ниже проверяем элементы начиная с третьего, в сумму сразу записываем первое четное число
 
 while 1:
     if not fi_z % 2:
