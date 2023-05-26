@@ -9,19 +9,17 @@ import time
 
 
 def count_divisors(num):
-    list = [1]  # Список с делителями
-    i = 2  # 1 уже в списке, начинаем проверку с 2
-    while i < num / 2 + 1:
+    list = []  # Список с делителями
+    i = 1  # Первый делитель на проверку
+    while i <= num // i:
         if num % i == 0:
-            if i > num // i:
-                break
             list.append(i)
+            if i == num // i:
+                break
             list.append(num // i)
-        #            count += 1
         i += 1
-    list.append(num)
-    list.sort()
-    print(num, ": ", len(list), ":", list)
+#    list.sort()
+#    print(num, ": ", len(list), ":", list)
     return (len(list))
 
 
